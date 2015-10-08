@@ -4,13 +4,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class AboutMe extends AppCompatActivity {
 
+    private Button Family
+    private Button Friends
+    private Button Soccer
+    private Button Music
+    private Button Journey
+    private RelativeLayout Background
+
+
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me);
+
+        Family = (Button) findViewById(R.id.familyButton);
+        Friends = (Button) findViewById(R.id.friendsButton);
+        Soccer = (Button) findViewById(R.id.soccerButton);
+        Music = (Button) findViewById(R.id.musicButton);
+        Journey = (Button) findViewById(R.id.journeyButton);
+        Background = (RelativeLayout) findViewById(R.id.backgroundLayout);
     }
 
     @Override
