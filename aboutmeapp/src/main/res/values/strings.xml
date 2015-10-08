@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AboutMeApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="familyButton">Family</string>
+    <string name="soccerButton">Soccer</string>
+    <string name="journeyButton">Journey</string>
+    <string name="musicButton">Music</string>
+    <string name="friendsButton">Homies</string>
+
+</resources>

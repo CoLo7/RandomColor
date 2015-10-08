@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".AboutMe">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/musicButton"
+        android:id="@+id/musicButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/familyButton"
+        android:id="@+id/familyButton"
+        android:layout_above="@+id/soccerButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/journeyButton"
+        android:id="@+id/journeyButton"
+        android:layout_alignTop="@+id/familyButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friendsButton"
+        android:id="@+id/friendsButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/soccerButton"
+        android:id="@+id/soccerButton"
+        android:layout_alignTop="@+id/friendsButton"
+        android:layout_alignRight="@+id/familyButton"
+        android:layout_alignEnd="@+id/familyButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/highGabe"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/friendsButton"
+        android:layout_alignEnd="@+id/friendsButton"
+        android:layout_marginTop="84dp" />
+
+</RelativeLayout>

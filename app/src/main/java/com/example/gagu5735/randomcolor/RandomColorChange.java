@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.RelativeLayout;
 import android.graphics.Color;
+import android.content.Intent;
 
 
 
@@ -16,6 +17,7 @@ import android.graphics.Color;
 public class RandomColorChange extends AppCompatActivity
 {
     private Button colorChangeButton;
+    private Button screenChangeButton;
     private TextView basicText;
     private RelativeLayout background;
 
@@ -77,6 +79,18 @@ public class RandomColorChange extends AppCompatActivity
     }
 
 
+    private void changeVisibility()
+    {
+        if(basicText.getVisibility()== View.VISIBLE)
+        {
+            basicText.setVisibility(View.GONE);
+        }
+        else
+        {
+            basicText.setVisibility(View.VISIBLE);
+        }
+    }
+
     private void setupListeners()
     {
         colorChangeButton.setOnClickListener(new View.OnClickListener()
@@ -85,8 +99,17 @@ public class RandomColorChange extends AppCompatActivity
             {
                 //This is where the action happens!
                 changeBackgroundColor();
+                changeVisibility();
             }
         });
 
+        screenChangeButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                Intent myIntent = new Intent(buttonView.getContext(), RunningActivity.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 }
